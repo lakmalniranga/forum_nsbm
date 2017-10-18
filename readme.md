@@ -1,3 +1,52 @@
+## About project
+
+Developed by lakmalniranga@gmail.com
+
+I've used PHP Laravel web application framework for this assignment with MySQL.
+
+Github project link: https://github.com/lakmalniranga/forum_nsbm
+
+Installation Note: https://laravel.com/docs/5.5/installation
+
+## Installation
+
+(Recommended development enviroment: Linux)
+
+1. Clone git or extract uploaded zip
+
+2. Install dependency via CLI
+
+	```$ composer install```
+
+3. Please create MySQL database.
+
+4. Replace your database details in .env file
+
+5. All the migration can be done via command line
+
+	```$ php artisan migrate```
+
+6. You can use fake data generator
+
+	```$ php artisan tinker```
+
+	in tinker shell
+  
+  ```
+	$ $user = factory(App\User::class, 100)->create();   		// will create 100 users
+	$ $thread = factory(App\Thread::class, 100)->create();   	// will create 100 threads (posts)
+	$ $replies = factory(App\Reply::class, 100)->create();   	// will create 100 replies for the above thread + users
+  ```
+
+7. You might need to set permison for bootstrap/cache and storage directory
+
+	```$ sudo chmod -R 777 bootstrap/cache```
+	```$ sudo chmod -R 777 storage```
+
+8. you can start server using artisan command | default port is 8000
+
+	```$ php artisan serve```
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
